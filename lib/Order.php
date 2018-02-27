@@ -63,7 +63,7 @@ class Order
     }
 
     /** @var $countryCode - The countryCode influences the returned payment methods */
-    public $countryCode = 'GB';
+    public $countryCode = 'NL';
 
     public function getCountryCode()
     {
