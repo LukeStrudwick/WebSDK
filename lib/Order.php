@@ -28,10 +28,10 @@ class Order
     public $value = 1000;
 
     /** @var  $currencyCode - Change this to any currency you support: https://docs.adyen.com/developers/currency-codes */
-    public $currencyCode = 'GBP';
+    public $currencyCode = 'EUR';
 
     /** @array $amount - Amount is a combination of value and currency */
-    public $amount = ['value' => 1000, 'currency' => "GBP"];
+    public $amount = ['value' => 1000, 'currency' => "EUR"];
 
     public function getAmount()
     {
