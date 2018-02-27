@@ -25,13 +25,13 @@
 class Order
 {
     /** @int value - Put the value into minor units 120 = 1.20 (for USD), for decimal information per currency see: https://docs.adyen.com/developers/currency-codes */
-    public $value = 120;
+    public $value = 1000;
 
     /** @var  $currencyCode - Change this to any currency you support: https://docs.adyen.com/developers/currency-codes */
-    public $currencyCode = 'USD';
+    public $currencyCode = 'GBP';
 
     /** @array $amount - Amount is a combination of value and currency */
-    public $amount = ['value' => 120, 'currency' => "USD"];
+    public $amount = ['value' => 1000, 'currency' => "GBP"];
 
     public function getAmount()
     {
@@ -55,7 +55,7 @@ class Order
     }
 
     /** @var $shopperLocale - The shopper locale : https://docs.adyen.com/developers/in-app-integration/checkout-api-reference/setup */
-    public $shopperLocale = 'en_US';
+    public $shopperLocale = 'en_GB';
 
     public function getShopperLocale()
     {
@@ -63,7 +63,7 @@ class Order
     }
 
     /** @var $countryCode - The countryCode influences the returned payment methods */
-    public $countryCode = 'FR';
+    public $countryCode = 'GB';
 
     public function getCountryCode()
     {
