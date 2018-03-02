@@ -79,6 +79,11 @@ class Order
 		'stateOrProvince' => "NH",
 		'country' => "NL"
         ];
+	
+	    public function getBillingAddress()
+    {
+        return $this->billingAddress;
+    }
     
         public $deliveryAddress = 
         [
@@ -89,6 +94,11 @@ class Order
 		'stateOrProvince' => "NH",
 		'country' => "NL"
         ];
+		
+	    public function getDeliveryAddress()
+    {
+        return $this->deliveryAddress;
+    }
     
         public $shopperName = 
         [
@@ -96,6 +106,11 @@ class Order
         'firstName' => "Luke",   
         'lastName' => "Strudwick"
         ];
+		
+	    public function getShopperName()
+    {
+        return $this->shopperName;
+    }
     
     /** @var $channel - the channel influences the returned payment methods (the same server can be used for iOS, Android and Point of sale */
     public $channel = 'Web';
