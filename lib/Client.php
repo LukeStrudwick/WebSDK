@@ -39,6 +39,9 @@ class Client
             'shopperReference' => $order->getShopperReference(),
             'shopperLocale' => $order->getShopperLocale(),
             'reference' => $order->getReference(),
+            'billingAddress' => $order->getBillingAddress(),
+            'deliveryAddress' => $order->getDeliveryAddress(),
+            'shopperName' => $order->getShopperName(),
 
             /** All server specific settings can be found in config/Config.php */
 
