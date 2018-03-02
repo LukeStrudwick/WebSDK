@@ -70,6 +70,33 @@ class Order
         return $this->countryCode;
     }
 
+    public $billingAddress = 
+        [
+        'street' => "Simon Carmiggeltstraat", 
+        'postalCode' => "1011DJ",   
+        'city' => "Amsterdam",
+		'houseNumberOrName' => "6-60",
+		'stateOrProvince' => "NH",
+		'country' => "NL"
+        ];
+    
+        public $deliveryAddress = 
+        [
+        'street' => "Simon Carmiggeltstraat", 
+        'postalCode' => "1011DJ",   
+        'city' => "Amsterdam",
+		'houseNumberOrName' => "6-60",
+		'stateOrProvince' => "NH",
+		'country' => "NL"
+        ];
+    
+        public $shopperName = 
+        [
+        'gender' => "MALE", 
+        'firstName' => "Luke",   
+        'lastName' => "Strudwick"
+        ];
+    
     /** @var $channel - the channel influences the returned payment methods (the same server can be used for iOS, Android and Point of sale */
     public $channel = 'Web';
 
