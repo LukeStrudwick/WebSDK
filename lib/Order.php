@@ -54,12 +54,27 @@ class Order
         return $this->shopperReference;
     }
 	
-	    public $shopperEmail = 'luke.strudwick@adyen.com';
+	    	public $shopperEmail = 'luke.strudwick@adyen.com';
 
     public function getShopperEmail()
     {
         return $this->shopperEmail;
     }
+	
+		public $telephoneNumber= '01234567891';
+
+    public function gettelephoneNumber()
+    {
+        return $this->telephoneNumber;
+    }
+	
+		public $dateOfBirth= '1987-02-25';
+
+    public function getdateOfBirth()
+    {
+        return $this->dateOfBirth;
+    }
+	
 
     /** @var $shopperLocale - The shopper locale : https://docs.adyen.com/developers/in-app-integration/checkout-api-reference/setup */
     public $shopperLocale = 'en_GB';
