@@ -60,7 +60,7 @@ class Order
     {
         return $this->shopperEmail;
     }
-	
+	/**
 		public $telephoneNumber= '01234567891';
 
     public function getTelephoneNumber()
@@ -74,7 +74,7 @@ class Order
     {
         return $this->dateOfBirth;
     }
-	
+	*/
 
     /** @var $shopperLocale - The shopper locale : https://docs.adyen.com/developers/in-app-integration/checkout-api-reference/setup */
     public $shopperLocale = 'en_GB';
