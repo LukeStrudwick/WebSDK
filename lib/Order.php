@@ -53,6 +53,13 @@ class Order
     {
         return $this->shopperReference;
     }
+	
+	    public $shopperEmail = 'luke.strudwick@adyen.com';
+
+    public function getShopperEmail()
+    {
+        return $this->shopperEmail;
+    }
 
     /** @var $shopperLocale - The shopper locale : https://docs.adyen.com/developers/in-app-integration/checkout-api-reference/setup */
     public $shopperLocale = 'en_GB';
@@ -101,6 +108,7 @@ class Order
     }
     
         public $shopperName = 
+
         [
         'gender' => "MALE", 
         'firstName' => "Luke",   
