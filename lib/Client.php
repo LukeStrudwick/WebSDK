@@ -42,6 +42,7 @@ class Client
             'billingAddress' => $order->getBillingAddress(),
             'deliveryAddress' => $order->getDeliveryAddress(),
             'shopperName' => $order->getShopperName(),
+            'shopperEmail' => $order->getShopperEmail(),
 
             /** All server specific settings can be found in config/Config.php */
 
