@@ -43,6 +43,8 @@ class Client
             'deliveryAddress' => $order->getDeliveryAddress(),
             'shopperName' => $order->getShopperName(),
             'shopperEmail' => $order->getShopperEmail(),
+            'dateOfBirth' => $order->dateOfBirth(),
+            'telephoneNumber' => $order->telephoneNumber(),
 
             /** All server specific settings can be found in config/Config.php */
 
