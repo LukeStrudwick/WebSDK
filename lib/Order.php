@@ -63,14 +63,14 @@ class Order
 	
 		public $telephoneNumber= '01234567891';
 
-    public function gettelephoneNumber()
+    public function getTelephoneNumber()
     {
         return $this->telephoneNumber;
     }
 	
 		public $dateOfBirth= '1987-02-25';
 
-    public function getdateOfBirth()
+    public function getDateOfBirth()
     {
         return $this->dateOfBirth;
     }
