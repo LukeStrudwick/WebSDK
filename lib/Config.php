@@ -1,5 +1,4 @@
 <?php
-
 /**
  *                       ######
  *                       ######
@@ -22,10 +21,9 @@
 class Config
 {
     const ENDPOINT_TEST = "https://checkout-test.adyen.com/services/PaymentSetupAndVerification";
-    const VERSION = "/v32";
-    const SETUP = "/setup";
-    const VERIFY = "/verify";
-
+    const VERSION = "/v37";
+    const PAYMENTSESSION = "/paymentSession";
+    const PAYMENTSRESULT = "/payments/result";
     /** Function to define the protocol and base URL */
     public static function url()
     {
@@ -34,37 +32,30 @@ class Config
         } else {
             $protocol = stripos($_SERVER['SERVER_PROTOCOL'], 'https') === true ? 'https' : 'http';
         }
-
         return sprintf(
             "%s://%s", $protocol, $_SERVER['HTTP_HOST']
         );
     }
-
     public static function getOrigin()
     {
         return self::url();
     }
-
     public static function getShopperIP()
     {
         return $_SERVER['REMOTE_ADDR'];
     }
-
     public static function getReturnUrl()
     {
         return self::url();
     }
-
-    public static function getSetupUrl()
+    public static function getPaymentSessionUrl()
     {
-        return self::ENDPOINT_TEST . self::VERSION . self::SETUP;
+        return self::ENDPOINT_TEST . self::VERSION . self::PAYMENTSESSION;
     }
-
-    public static function getVerifyUrl()
+    public static function getPaymentsResultUrl()
     {
-        return self::ENDPOINT_TEST . self::VERSION . self::VERIFY;
+        return self::ENDPOINT_TEST . self::VERSION . self::PAYMENTSRESULT;
     }
-
     public static function getAuthentication()
     {
         $authentication = array();
